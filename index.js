@@ -310,4 +310,8 @@ app.post("/register", async (req, resp) => {
 
 
 
-app.listen(6900)
+  const port = 6900; // Choose a port number
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+  
