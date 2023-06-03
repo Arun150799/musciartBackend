@@ -18,9 +18,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get("/",(req,resp)=>{
-  resp.send("<h1>hlow this is rendering time</h1>")
-})
+
 
 app.post("/register", async (req, resp) => {
 
